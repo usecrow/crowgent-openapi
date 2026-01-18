@@ -1,0 +1,50 @@
+{
+  "name": "crowgent-openapi",
+  "version": "1.1.0",
+  "description": "Generate OpenAPI specs from your backend code using AI",
+  "type": "module",
+  "bin": {
+    "crowgent-openapi": "./dist/cli.js"
+  },
+  "main": "./dist/cli.js",
+  "scripts": {
+    "build": "tsc && chmod +x dist/cli.js",
+    "dev": "tsx src/cli.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "openai": "^4.0.0",
+    "ora": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "openapi",
+    "swagger",
+    "api",
+    "generator",
+    "ai",
+    "llm",
+    "gpt",
+    "documentation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usecrow/crowgent-openapi"
+  },
+  "author": "Crow",
+  "license": "MIT"
+}
